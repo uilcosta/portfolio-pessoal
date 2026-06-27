@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="formacao.html">Formação</a>
+            <a class="cabecalho__menu__link" href="portfolio.html">Portfólio</a>
+            <a class="cabecalho__menu__link" href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="apresentacao__centralizada">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Contato</h1>
+            <p class="apresentacao__conteudo_paragrafo">Tem algum projeto que gostaria de desenvolver? Entre em contato!</p>
+            <form class="contato__form" id="contatoForm">
+
+                <div class="contato__campo">
+                    <label class="contato__label" for="nome">Nome</label>
+                    <input class="contato__input" type="text" id="nome" placeholder="Seu nome completo">
+                    <span class="contato__erro" id="erroNome"></span>
+                </div>
+
+                <div class="contato__campo">
+                    <label class="contato__label" for="email">E-mail</label>
+                    <input class="contato__input" type="text" id="email" placeholder="seu@email.com">
+                    <span class="contato__erro" id="erroEmail"></span>
+                </div>
+
+                <div class="contato__campo">
+                    <label class="contato__label" for="mensagem">Mensagem</label>
+                    <textarea class="contato__input contato__textarea" id="mensagem" placeholder="Escreva sua mensagem..."></textarea>
+                    <span class="contato__erro" id="erroMensagem"></span>
+                </div>
+
+                <button class="contato__botao" type="submit">Enviar mensagem</button>
+
+            </form>
+
+            <!-- Modal de sucesso -->
+            <div class="modal" id="modal">
+                <div class="modal__caixa">
+                    <p class="modal__texto">Mensagem enviada com sucesso!</p>
+                    <button class="modal__botao" id="fecharModal">Fechar</button>
+                </div>
+            </div>    
+        </section>
+    </main>
+    
+    <footer class = 'rodape'>
+        <p>Desenvolvido por Uilian Cardoso.</p>
+    </footer>
+    <script src="./scripts/contato.js"></script>            
+</body>
+</html>

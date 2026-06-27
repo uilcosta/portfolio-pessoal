@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+/* ─── Cabeçalho ─────────────────────────────────── */
+
+.cabecalho{
+    padding: 2% 0% 0% 10%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+
+/* ─── Layout base ────────────────────────────────── */
+
+.apresentacao{
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 36px;
+    font-family: var(--fonte-primaria);
+}
+
+.tit-destaque{
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo_paragrafo{
+    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+}
+
+.apresentacao > img {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
+/* Layout centralizado — Portfólio e Contato */
+
+.apresentacao__centralizada {
+    display: flex;
+    padding: 5% 10%;
+    justify-content: center;
+}
+
+.apresentacao__centralizada .apresentacao__conteudo {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style da página - Formação */
+
+.formacao__secao {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.formacao__secao__titulo {
+    font-family: var(--fonte-primaria);
+    font-size: 24px;
+    color: var(--cor-terciaria);
+}
+
+.formacao__lista {
+    font-family: var(--fonte-secundaria);
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.certificados {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.certificados > img {
+  width: 500px;
+  height: auto;
+  display: block;
+}
+
+/* Style da página - Portfólio */
+
+
+.portfolio__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.portfolio__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 8px;
+    padding: 32px;
+}
+
+.portfolio__card__header {
+    display: flex;
+    gap: 8px;
+}
+
+
+.portfolio__tag {
+    font-family: var(--fonte-secundaria);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.portfolio__card__body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+}
+
+.portfolio__card__titulo {
+    font-family: var(--fonte-primaria);
+    font-size: 20px;
+    color: var(--cor-secundaria);
+}
+
+.portfolio__card__descricao {
+    font-family: var(--fonte-secundaria);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--cor-secundaria);
+    line-height: 1.6;
+}
+
+.portfolio__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    align-self: flex-start;
+}
+
+.portfolio__link:hover {
+    text-decoration: underline;
+}
+
+/* Style da página - Contato */
+
+.contato__form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.contato__campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contato__label {
+    font-family: var(--fonte-secundaria);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+}
+
+.contato__input {
+    background-color: #0d0d0d;
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 8px;
+    padding: 16px;
+    font-family: var(--fonte-secundaria);
+    font-size: 18px;
+    color: var(--cor-secundaria);
+}
+
+.contato__input:focus {
+    border-color: #ffffff;
+}
+
+.contato__textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contato__erro {
+    font-family: var(--fonte-secundaria);
+    font-size: 14px;
+    color: #ff4d4d;
+    min-height: 18px;
+}
+
+.contato__botao {
+    align-self: flex-start;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 48px;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.contato__botao:hover {
+    background-color: var(--cor-hover);
+}
+
+/* Modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal--visivel {
+    display: flex;
+}
+
+.modal__caixa {
+    background-color: #0d0d0d;
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 12px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.modal__texto {
+    font-family: var(--fonte-primaria);
+    font-size: 22px;
+    color: var(--cor-secundaria);
+    text-align: center;
+}
+
+.modal__botao {
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 32px;
+    cursor: pointer;
+}
+
+.modal__botao:hover {
+    opacity: 0.85;
+}
+
+.rodape{
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    text-align: center;
+    padding: 10px 0;
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 400;
+}
