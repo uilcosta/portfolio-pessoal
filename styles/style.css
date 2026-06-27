@@ -111,7 +111,7 @@ body{
 
 .formacao__lista {
     font-family: var(--fonte-secundaria);
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     padding-left: 24px;
     display: flex;
@@ -325,4 +325,108 @@ body{
     font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 400;
+}
+
+/* ─── Responsividade (telas até 768px — celular/tablet) ─────────────────────*/
+@media (max-width: 768px) {
+
+    .cabecalho {
+        padding: 4% 6% 0;
+    }
+
+    .cabecalho__menu {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .cabecalho__menu__link {
+        font-size: 14px;
+    }
+
+    /* Layout base vira coluna (Sobre mim e Formação) */
+    .apresentacao {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8% 6%;
+        gap: 32px;
+    }
+
+    /* Foto de perfil ocupa largura total */
+    .apresentacao > img {
+        width: 100%;
+    }
+
+    /* Conteúdo ocupa largura total */
+    .apresentacao__conteudo {
+        max-width: 100%;
+        gap: 24px;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 18px;
+    }
+
+    .apresentacao__conteudo_paragrafo {
+        font-size: 15px;
+    }
+
+    /* Certificados ocupam largura total */
+    .certificados {
+        width: 100%;
+    }
+
+    .certificados > img {
+        width: 100%;
+    }
+
+    /* Layout centralizado também vira coluna */
+    .apresentacao__centralizada {
+        padding: 8% 6%;
+    }
+
+    /* Cards do portfólio viram coluna */
+    .portfolio__card {
+        flex-direction: column;
+        gap: 12px;
+        padding: 20px;
+    }
+
+    .portfolio__card__titulo {
+        font-size: 18px;
+    }
+
+    .portfolio__card__descricao {
+        font-size: 15px;
+    }
+
+    .portfolio__link {
+        font-size: 14px;
+    }    
+
+    /* Botão de contato ocupa largura total */
+    .contato__botao {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Títulos de seção menores */
+    .formacao__secao__titulo {
+        font-size: 20px;
+    }
+
+    /* Modal ocupa mais espaço na tela */
+    .modal__caixa {
+        margin: 0 16px;
+        padding: 24px;
+    }
+
+    .modal__texto {
+        font-size: 18px;
+    }
+
+    /* Rodapé menor */
+    .rodape {
+        font-size: 12px;
+        padding: 12px 0;
+    }
 }
