@@ -332,7 +332,7 @@ body{
 @media (max-width: 768px) {
 
     .cabecalho {
-        padding: 4% 6% 0;
+        padding: 5% 2% 0% 6%;
     }
 
     .cabecalho__menu {
@@ -341,7 +341,7 @@ body{
     }
 
     .cabecalho__menu__link {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     /* Layout base vira coluna (Sobre mim e Formação) */
@@ -370,6 +370,11 @@ body{
     .apresentacao__conteudo_paragrafo {
         font-size: 15px;
     }
+    
+    /* Lista com fonte menor */
+    .formacao__lista {
+    font-size: 14px;
+}
 
     /* Certificados ocupam largura total */
     .certificados {
