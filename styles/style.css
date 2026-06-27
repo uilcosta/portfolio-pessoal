@@ -384,6 +384,10 @@ body{
         padding: 8% 6%;
     }
 
+    .apresentacao__centralizada .apresentacao__conteudo {
+        max-width: 100%;
+    }
+
     /* Cards do portfólio viram coluna */
     .portfolio__card {
         flex-direction: column;
