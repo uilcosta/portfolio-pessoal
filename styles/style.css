@@ -47,7 +47,7 @@ body{
 .apresentacao{
     padding: 5% 10%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
@@ -80,6 +80,7 @@ body{
   height: auto;
   display: block;
   flex-shrink: 0;
+  filter: grayscale(0.4) brightness(0.85) hue-rotate(190deg);
 }
 
 /* Layout centralizado — Portfólio e Contato */
@@ -111,7 +112,7 @@ body{
 
 .formacao__lista {
     font-family: var(--fonte-secundaria);
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     padding-left: 24px;
     display: flex;
