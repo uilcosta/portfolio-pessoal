@@ -408,8 +408,20 @@ body{
     }    
 
     /* Botão de contato ocupa largura total */
+
+    .contato__input {
+    padding: 12px;
+    font-size: 15px;
+    }
+
+    .contato__label {
+        font-size: 18px;
+    }
+
     .contato__botao {
         width: 100%;
+        font-size: 15px;
+        padding: 16px;
         text-align: center;
     }
 
